@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&family=Chivo+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 header {
     display: flex;
@@ -11,11 +11,13 @@ header {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     height: 10%;
+    font-family: 'Josefin Sans', sans-serif;
 }
 main {
     margin: auto;
     width:1652px ;
     height: 80%;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .Logo-Title {
     width: 30%;
@@ -56,12 +58,26 @@ main {
     flex-direction: column;
     background-color: #F0F0F0;
     border: #3C486B solid 2px;
+    align-items: center;
+    font-size: medium;
+}
+main .departmentHeader {
+    display: flex;
+    justify-content: center;
+    border: solid #3C486B 4px;
+    border-radius: 5px;
+    font-size: larger;
+    padding: 4px 12px;
+    margin-top: 20px;
+    width: 50%;
 }
 main section {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-content: space-evenly;
+    width: 70%;
+    flex-wrap: wrap;
 }
 main section div {
     display: flex;
@@ -76,6 +92,7 @@ main section div {
     margin-bottom: 20px;
     margin-top: 20px;
 }
+
 main section div img {
     width:150px;
     border-radius: 50%;
@@ -93,7 +110,8 @@ footer {
     width:1652px;
     border: #3C486B solid 2px;
     border-bottom-right-radius: 10px;    
-    border-bottom-left-radius: 10px;    
+    border-bottom-left-radius: 10px;
+    font-family: 'Josefin Sans', sans-serif;    
 }
 footer section {
     width: 1652px;
