@@ -76,6 +76,22 @@ hadi.renderToHomePage()
 
 // updating javascirpt for assignment lab 8 for this project.
 
+// Salary Calculator
+makeCard.prototype.SalaryCalc = function() {
+    if (this.level === 'Junior') {
+        let Salary = Math.floor(0.925*((Math.random() * (1000 - 500 + 1)) + 500)) ;
+        return Salary;
+    }
+    else if (this.level === 'Mid-Senior') {
+        let Salary = Math.floor(0.925*((Math.random() * (1500 - 1000 + 1)) + 1000)) ;
+        return Salary;
+    }
+    else if (this.level === 'Senior') {
+        let Salary = Math.floor(0.925*((Math.random() * (2000 - 1500 + 1)) + 1500)) ;
+        return Salary;
+    }
+}
+
 //creating random ID number 4 digits
 const genRandomNum =  () => {
 let randomNum = Math.floor(1000 +Math.random()*9000);
@@ -91,6 +107,7 @@ function makeCard(fullName,department,level,urlImg) {
     this.level = level;
     this.urlImg = urlImg;
     this.employeeID =  genRandomNum();
+    this.salary = this.SalaryCalc();
 }
 
 // creating prototypes for each makeCard object:
@@ -104,7 +121,7 @@ makeCard.prototype.renderInHome = function () {
         createH2.textContent = this.fullName
         const createPara = document.createElement('p');
         // createPara.innerHTML = `Department: ${this.department}` `level: ${this.level}` `ID: ${this.employeeID}`
-        createPara.textContent = `Department:${this.department} level:${this.level} ID:${this.employeeID}`;
+        createPara.textContent = `Department:${this.department} level:${this.level} ID:${this.employeeID}  Total Salary after Tax: $${this.salary}`;
 
         const creatingImg = document.createElement('img');
         creatingImg.src = this.urlImg;
@@ -119,7 +136,7 @@ makeCard.prototype.renderInHome = function () {
         createH2.textContent = this.fullName
         const createPara = document.createElement('p');
         // createPara.innerHTML = `Department: ${this.department}` `level: ${this.level}` `ID: ${this.employeeID}`
-        createPara.textContent = `Department:${this.department} level:${this.level} ID:${this.employeeID}`;
+        createPara.textContent = `Department:${this.department} level:${this.level} ID:${this.employeeID}  Total Salary after Tax: $${this.salary}`;
 
         const creatingImg = document.createElement('img');
         creatingImg.src = this.urlImg;
@@ -134,7 +151,7 @@ makeCard.prototype.renderInHome = function () {
         createH2.textContent = this.fullName
         const createPara = document.createElement('p');
         // createPara.innerHTML = `Department: ${this.department}` `level: ${this.level}` `ID: ${this.employeeID}`
-        createPara.textContent = `Department:${this.department} level:${this.level} ID:${this.employeeID}`;
+        createPara.textContent = `Department:${this.department} level:${this.level} ID:${this.employeeID}  Total Salary after Tax: $${this.salary}`;
 
         const creatingImg = document.createElement('img');
         creatingImg.src = this.urlImg;
@@ -149,7 +166,7 @@ makeCard.prototype.renderInHome = function () {
         createH2.textContent = this.fullName
         const createPara = document.createElement('p');
         // createPara.innerHTML = `Department: ${this.department}` `level: ${this.level}` `ID: ${this.employeeID}`
-        createPara.textContent = `Department:${this.department} level:${this.level} ID:${this.employeeID}`;
+        createPara.textContent = `Department:${this.department} level:${this.level} ID:${this.employeeID}  Total Salary after Tax: $${this.salary}`;
 
         const creatingImg = document.createElement('img');
         creatingImg.src = this.urlImg;
