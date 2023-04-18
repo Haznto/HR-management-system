@@ -24,59 +24,98 @@
         </section>
     </header>
     <main>
-        <section>
-        <div >
-            <img src="" alt="">
+        <fieldset>
+            <legend>Add new Employee</legend>
+            Please fill the date to add new employee card.
+            <form id="employeeForm">
+                <label for="fullName">Full Name</label>
+                <input id="fullName" type="text">
+                <label for="department">Depratment</label>
+                <select name="department" id="department" aria-placeholder="Department">
+                    <option value="Administration">Administration</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Development">Development</option>
+                    <option value="Finance">Finance</option>                    
+                </select>
+
+                <label for="level">Level</label>
+                <select name="level" id="level" aria-placeholder="Level">
+                    <option value="Junior">Junior</option>
+                    <option value="Mid-Senior">Mid-Senior</option>
+                    <option value="Senior">Senior</option>
+                </select>
+                <label for="urlImg">Profile Image link</label>
+                <input id ="urlImg" type="url" placeholder="https://example.com">
+                <button>Submit</button>
+
+            </form>
+        </fieldset>
+
+        <h2 class="departmentHeader">Administration Department</h2>
+        <section id="administrationSec">
+            
+            <div id="defaultCard">
+                <img id="eImg1"  alt="profile picture">
+                <h2 id="employee1"></h2>
+                <p id="employeeSalary1"></p>
+            </div>
+            <div>
+                <img id="eImg4"  alt="profile picture">
+                <h2 id="employee4">Profile name</h2>
+                <p id="employeeSalary4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora explicabo tempore ullam quisquam, veritatis rerum! Ab inventore autem velit dolorem temporibus quia vero, expedita magni voluptatem reprehenderit? Nam, reiciendis earum.</p>
+            </div>
+        </section>
+
+
+        <h2 class="departmentHeader">Marketing Department</h2>
+        <section id="marketingSec">
+            
+            <div>
+                <img id="eImg3"  alt="profile picture">
+                <h2 id="employee3">Profile name</h2>
+                <p id="employeeSalary3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora explicabo tempore ullam quisquam, veritatis rerum! Ab inventore autem velit dolorem temporibus quia vero, expedita magni voluptatem reprehenderit? Nam, reiciendis earum.</p>
+            </div>
+        </section>
+
+        <h2 class="departmentHeader">Development Department</h2>
+        <section id="developmentSec">
+           
+            <div>
+                <img id="eImg5"  alt="profile picture">
+                <h2 id="employee5">Profile name</h2>
+                <p id="employeeSalary5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora explicabo tempore ullam quisquam, veritatis rerum! Ab inventore autem velit dolorem temporibus quia vero, expedita magni voluptatem reprehenderit? Nam, reiciendis earum.</p>
+            </div>
+            <div>
+                <img id="eImg6"  alt="profile picture">
+                <h2 id="employee6">Profile name</h2>
+                <p id="employeeSalary6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora explicabo tempore ullam quisquam, veritatis rerum! Ab inventore autem velit dolorem temporibus quia vero, expedita magni voluptatem reprehenderit? Nam, reiciendis earum.</p>
+            </div>
+        </section>
+
+        <h2 class="departmentHeader">Finance Department</h2>
+        <section id="financeSec">
+        <!-- <div id="defaultCard">
+            <img id="eImg1"  alt="profile picture">
             <h2 id="employee1"></h2>
-            <p id="employeeSalary1"></p>
+            <p id="employeeSalary1"></p> -->
         </div>
         <div>
-            <img src="" alt="">
+            <img id="eImg2"  alt="profile picture">
             <h2 id="employee2">Profile name</h2>
             <p id="employeeSalary2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora explicabo tempore ullam quisquam, veritatis rerum! Ab inventore autem velit dolorem temporibus quia vero, expedita magni voluptatem reprehenderit? Nam, reiciendis earum.</p>
         </div>
+        
+       
+        
         <div>
-            <img src="" alt="">
-            <h2 id="employee3">Profile name</h2>
-            <p id="employeeSalary3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora explicabo tempore ullam quisquam, veritatis rerum! Ab inventore autem velit dolorem temporibus quia vero, expedita magni voluptatem reprehenderit? Nam, reiciendis earum.</p>
-        </div>
-        </section>
-        <section>
-        <div>
-            <img src="" alt="">
-            <h2 id="employee4">Profile name</h2>
-            <p id="employeeSalary4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora explicabo tempore ullam quisquam, veritatis rerum! Ab inventore autem velit dolorem temporibus quia vero, expedita magni voluptatem reprehenderit? Nam, reiciendis earum.</p>
-        </div>
-        <div>
-            <img src="" alt="">
-            <h2 id="employee5">Profile name</h2>
-            <p id="employeeSalary5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora explicabo tempore ullam quisquam, veritatis rerum! Ab inventore autem velit dolorem temporibus quia vero, expedita magni voluptatem reprehenderit? Nam, reiciendis earum.</p>
-        </div>
-        <div>
-            <img src="" alt="">
-            <h2 id="employee6">Profile name</h2>
-            <p id="employeeSalary6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora explicabo tempore ullam quisquam, veritatis rerum! Ab inventore autem velit dolorem temporibus quia vero, expedita magni voluptatem reprehenderit? Nam, reiciendis earum.</p>
-        </div>
-        </section>
-        <section>
-        <div>
-            <img src="" alt="">
+            <img id="eImg7"  alt="profile picture">
             <h2 id="employee7">Profile name</h2>
             <p id="employeeSalary7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora explicabo tempore ullam quisquam, veritatis rerum! Ab inventore autem velit dolorem temporibus quia vero, expedita magni voluptatem reprehenderit? Nam, reiciendis earum.</p>
         </div>
-        <div>
-            <img src="" alt="">
-            <h2 id="employee8">Profile name</h2>
-            <p id="employeeSalary8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora explicabo tempore ullam quisquam, veritatis rerum! Ab inventore autem velit dolorem temporibus quia vero, expedita magni voluptatem reprehenderit? Nam, reiciendis earum.</p>
-        </div>
-        <div>
-            <img src="" alt="">
-            <h2 id="employee9">Profile name</h2>
-            <p id="employeeSalary9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, sequi nihil vel, dolorem perferendis temporibus mollitia quasi, magnam alias minus consequuntur similique tenetur? Expedita reiciendis nulla nisi, eum dolor soluta?
-                
-            </p>
-        </div>
+        
         </section>
+        
+        
     </main>
     <footer>
         <section class="footerSection1">
