@@ -24,7 +24,51 @@
         </section>
     </header>
     <main>
-        
+        <h2>Statistics Table</h2>
+        <section>
+        <table>
+            <thead>
+            <tr>
+                <td>Department Name</td>
+                <td># Of Employees</td>
+                <td>Avg Salary Of Department</td>
+                <td>Total Salary</td>
+                
+            </tr>
+            </thead>
+
+            <tbody>
+                    <tr id="adminRow">
+                        <td>Administration</td>
+                    </tr>
+                    <tr id="FinanceRow">
+                        <td>Finance</td> 
+                    </tr>
+                    <tr id="DevRow">
+                        <td>Development</td>
+                    </tr>
+                    <tr id="MarketingRow">
+                        <td>Marketing</td>
+                    </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>•  Cumulatives  •</td>
+                    <td>Total Number of Employees</td>
+                    <td>Average Salary for all department</td>
+                    <td>Total Salary for all department</td>
+                </tr>
+                <tr>
+                    <td>•  Values  •</td>
+                    <td id="totalNumOfAllEm"></td>
+                    <td id="avgSalaryOfAllEm"></td>
+                    <td id="totalSalaryForAllDep"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+        <!-- <section id="tableRender"></section> -->
     </main>
     <footer>
         <section class="footerSection1">
@@ -34,5 +78,6 @@
         </section>
         <section class="footerSection2">All rights reserved@ 2023 Haznto</section>
     </footer>
+    <script src="./js/accounting.js"></script>
 </body>
 </html>
